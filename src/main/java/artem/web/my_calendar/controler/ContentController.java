@@ -10,15 +10,16 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/content")
+@RequestMapping("api/content")
 public class ContentController {
 
     private final ContentCollectionRepository repository;
 
-    @Autowired
     public ContentController(ContentCollectionRepository repository) {
         this.repository = repository;
     }
+
+
     //request t fin al the pieces of content
     @GetMapping("")
     public List<Content> findAll(){
