@@ -2,7 +2,6 @@ package artem.web.my_calendar.model;
 
 import jdk.jshell.Snippet;
 
-import java.lang.reflect.Type;
 import java.time.LocalDateTime;
 
 public record Content(
