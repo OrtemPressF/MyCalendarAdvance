@@ -1,0 +1,35 @@
+GET http://localhost:8080/api/content
+
+
+###Create new Content
+POST http://localhost:8080/api/content
+Content-Type: application/json
+
+{
+  "id": 2,
+  "title": "My sec piece of content",
+  "desc": "sec test content",
+  "status": "Idea",
+  "contentType": "ARTICLE",
+  "dateCreated": "2024-07-28T14:42:19.3384853",
+  "dateUpdated": null,
+  "url": ""
+}
+###Update new Content
+PUT http://localhost:8080/api/content/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "My first edited piece of content",
+  "desc": "updated test content",
+  "status": "Idea",
+  "contentType": "ARTICLE",
+  "dateCreated": "2024-07-28T14:42:19.3384853",
+  "dateUpdated": "2024-07-28T14:42:19.3384853",
+  "url": "http://localhost:8080/my-first-edit"
+}
+
+###Delete  Content
+DELETE http://localhost:8080/api/content/1
+
